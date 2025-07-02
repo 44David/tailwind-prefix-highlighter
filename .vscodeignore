@@ -1,58 +1,73 @@
-{
-  "name": "tailwind-prefix-highlighter",
-  "displayName": "Tailwind Prefix Highlighter",
-  "description": "Highlights Tailwind CSS responsive prefixes and state modifiers",
-  "version": "1.0.0",
-  "publisher": "44David",
-  "keywords": [
-    "tailwind",
-    "css",
-    "highlight",
-    "responsive",
-    "prefixes"
-  ],
-  "engines": {
-    "vscode": "^1.74.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onLanguage:html",
-    "onLanguage:javascript",
-    "onLanguage:typescript",
-    "onLanguage:javascriptreact",
-    "onLanguage:typescriptreact",
-    "onLanguage:vue",
-    "onLanguage:svelte"
-  ],
-  "main": "./out/extension.js",
-  "files": [
-    "out/**/*",
-    "README.md",
-    "CHANGELOG.md",
-    "LICENSE"
-  ],
-  "contributes": {
-    "configuration": {
-      "title": "Tailwind Prefix Highlighter",
-      "properties": {
-        "tailwindPrefixHighlighter.enabled": {
-          "type": "boolean",
-          "default": true,
-          "description": "Enable/disable the Tailwind prefix highlighter"
-        }
-      }
-    }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.74.0",
-    "@types/node": "16.x",
-    "typescript": "^4.9.4"
-  }
-}
+# Dependencies - CRITICAL: Exclude node_modules
+node_modules
+node_modules/
+node_modules/**
+**/node_modules/**
+
+# Source files
+src/
+src/**
+.vscode/
+.vscode/**
+.vscode-test/
+.vscode-test/**
+
+# Git files
+.git/**/*
+.gitignore
+.gitattributes
+
+# IDE files
+.vscode/**/*
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+
+# Test files
+test/**/*
+tests/**/*
+**/*.test.js
+**/*.test.ts
+
+# Documentation (optional - remove if you want to include)
+docs/**/*
+
+# Development files
+webpack.config.js
+rollup.config.js

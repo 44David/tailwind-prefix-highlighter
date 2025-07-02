@@ -2,7 +2,7 @@
   "name": "tailwind-prefix-highlighter",
   "displayName": "Tailwind Prefix Highlighter",
   "description": "Highlights Tailwind CSS responsive prefixes and state modifiers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "44David",
   "repository": {
     "type": "git",

@@ -3,6 +3,18 @@
   "displayName": "Tailwind Prefix Highlighter",
   "description": "Highlights Tailwind CSS responsive prefixes and state modifiers",
   "version": "1.0.0",
+  "publisher": "44David",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/44David/tailwind-prefix-highlighter.git"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "highlight",
+    "responsive",
+    "prefixes"
+  ],
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -37,11 +49,8 @@
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/node": "16.x",
     "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
     "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "@vscode/vsce": "^3.6.0"
   }
 }
